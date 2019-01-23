@@ -1,0 +1,15 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      name: config-client
+      profile: dev
+      #uri: http://localhost:8888/
+      discovery:
+        enabled: true
+        service-id: config-server
+
